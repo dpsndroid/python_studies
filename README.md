@@ -1,2 +1,2 @@
 # python_studies
- A repository of my stydies in python language
+ A repository of my studies in python language
