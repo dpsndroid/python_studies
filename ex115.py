@@ -2,6 +2,13 @@
 # to sign people from name and age
 # The system will have only two options: sign people and list the signed people
 import ex115mod
+import ex115modb
+
+arch = "cursoemvideo.txt"
+
+if not ex115modb.fileexists(arch):
+    ex115modb.createfile(arch)
+
 
 while True:
     ex115mod.menu(["Show registered people","Register new person","Shutdown"])
@@ -12,9 +19,9 @@ while True:
         else:
             op = str(input("type a valid number: "))
     if op == "1":
-        ex115mod.record_people()
+        ex115modb.readfile(arch)
     elif op == "2":
-        ex115mod.signin()
+        ex115mod.signin() # It will change. It's not ready yet
     elif op == "3":
         break
 ex115mod.header("Program ended successfuly")

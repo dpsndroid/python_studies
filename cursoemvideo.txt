@@ -1,0 +1,5 @@
+Daniel;45
+Simone;53
+Luiza;12
+Rihanna;14
+Ruffles;10
