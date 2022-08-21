@@ -21,7 +21,7 @@ while True:
     if op == "1":
         ex115modb.readfile(arch)
     elif op == "2":
-        ex115mod.signin() # It will change. It's not ready yet
+        ex115mod.signin() 
     elif op == "3":
         break
 ex115mod.header("Program ended successfuly")
