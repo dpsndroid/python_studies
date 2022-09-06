@@ -1,6 +1,10 @@
 #programa que leia ano de nascimento do atleta e mostre sua categoria
 #até 9 mirim, até 14 infantil, até 19 junior, até 20 senior, acima master
+
+
 from datetime import date
+
+
 anonasc = int(input("Qual o seu ano de nascimento: "))
 hoje = date.today().year
 idade = hoje - anonasc
