@@ -1,6 +1,7 @@
 # treinamento do datetime
 
 from datetime import date, time, datetime, timedelta
+from time import strptime
 
 ano = date.today().year
 mes = date.today().month
@@ -60,8 +61,30 @@ futuro = datetime.now() + timedelta(days=tdias)
 print(futuro)
 
 hoje = datetime(date.today().year, date.today().month, date.today().day, 0, 0, 0)
-escolha = datetime(2023, 2, 29, 0, 0, 0)
+escolha = datetime(2023, 2, 27, 0, 0, 0)
 print(escolha)
+print("-------------------------------------------------------------------------------------")
+
+data_inicial = "06/09/2022" 
+
+dataret = data_inicial.split("/")
+print(dataret)
+x = int(dataret[0])
+y = int(dataret[1])
+z = int(dataret[2])
+dataret2 = [x,y,z]
+print(dataret2)
+
+
+
+datar = "07/09/2022"
+datad = "08/09/2022"
+a = datetime.strptime(datar, "%d/%m/%Y")
+b = datetime.strptime(datad, "%d/%m/%Y")
+print(a)
+print(b)
+c = strptime(datar, "%d/%m/%Y")
+d = strptime(datad, "%d/%m/%Y")
 
 
 
