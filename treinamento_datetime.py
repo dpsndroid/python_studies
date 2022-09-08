@@ -86,6 +86,11 @@ print(b)
 c = strptime(datar, "%d/%m/%Y")
 d = strptime(datad, "%d/%m/%Y")
 
+w = "123.456"
+moca = w.split()
+print(moca)
+
+
 
 
 
