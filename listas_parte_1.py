@@ -36,7 +36,7 @@ for v in valores:
     print(v, end = " ")
 print(" ")
 
-for c in range(0,5):
+for c in range(0,6):
     valores.append(int(input("digite valor: ")))
 for c, v in enumerate(valores):
     print(f"posição {c} encontra valor {v}")
