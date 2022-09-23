@@ -22,5 +22,5 @@ for c in range(0,2):
     datac.append(int(input("Age: ")))
     crowd.append(datac[:]) #cria uma cópia dos dados
 print(datac)    
-datac.clear()
+datac.clear() # limpa a lista, eu acho
     
