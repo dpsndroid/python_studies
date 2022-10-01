@@ -1,4 +1,4 @@
-lista = [32,18,1,3,8,10,2,15,22,31,27,16,17,44,45,38,29,51,52,74,33,48]
+lista = [1, 2, 3, 10, 14, 15, 19, 20, 21, 22, 23]
 lista.sort()
 teste = []
 nova = []
@@ -13,19 +13,17 @@ for i in lista:
             teste.append(inicio)
         if num not in teste:
             teste.append(num)
+        
     elif dist == False:
-        teste = []
-        nova.append(teste)
+        if teste == []:
+            pass
+        else:
+            nova.append(teste)
+            teste = []
     
     cont += 1
-
-retirar = []  
-
-try:
-    while True:
-        nova.remove(retirar)
-except ValueError:
-    pass
+    
+nova.append(teste)
 
 print(nova)
   
