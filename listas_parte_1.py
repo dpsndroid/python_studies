@@ -1,6 +1,8 @@
 #Listas - parte 1
 num = [2,5,9,1]
 print(num)
+local = num.index(9)
+print(local)
 num.sort() #coloca em ordem
 print(num)
 num.sort(reverse = True)
@@ -48,4 +50,7 @@ b = a[:] #copia apenas os elementos, então pode alterar sozinha
 b[2] = 8
 print(a)
 print(b)
+nova = [10,20,30,40,50,60,70]
+del nova[2:]
+print(nova)
 
